@@ -9,6 +9,6 @@ typedef struct max_heap  // Definindo a estrutura da heap
     int tamanho;               // Tamanho atual da heap
 } heap_t; 
 
-void inserir(heap_t *heap, int valor);
-int remover(heap_t *heap);
-void imprimir(heap_t heap);
+void inserir_max(heap_t *heap, int valor);
+int remover_max(heap_t *heap);
+void imprimir_max(heap_t heap);
