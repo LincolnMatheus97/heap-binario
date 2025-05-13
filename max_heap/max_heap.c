@@ -115,16 +115,16 @@ int main() {
     heap_t heap;        // Declaração da variável heap
     heap.tamanho = 0;   // Inicializa o tamanho da heap como 0
 
-    inserir(&heap, 30);
-    inserir(&heap, 20);
-    inserir(&heap, 50);
-    inserir(&heap, 10);
-    inserir(&heap, 40);
+    inserir_max(&heap, 30);
+    inserir_max(&heap, 20);
+    inserir_max(&heap, 50);
+    inserir_max(&heap, 10);
+    inserir_max(&heap, 40);
 
-    imprimir(heap);
+    imprimir_max(heap);
 
-    printf("Maior valor removido: %d\n", remover(&heap));
-    imprimir(heap);
+    printf("Maior valor removido: %d\n", remover_max(&heap));
+    imprimir_max(heap);
 
     return 0;
 }
