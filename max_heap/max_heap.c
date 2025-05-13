@@ -11,7 +11,7 @@
  *       A propriedade max_heap garante que o valor de cada nó pai seja maior ou igual ao valor de seus filhos.
  * @note 
  */ 
-void inserir(heap_t *heap, int valor)
+void inserir_max(heap_t *heap, int valor)
 {   
     // Verifica se a heap está cheia
     if (heap->tamanho >= TAM_MAX_VETOR)
@@ -45,7 +45,7 @@ void inserir(heap_t *heap, int valor)
  *      Em seguida, ela reorganiza a heap para manter a propriedade max_heap.
  *      A função utiliza um loop para comparar o nó atual com seus filhos e trocá-los se necessário.
  */
-int remover(heap_t *heap)
+int remover_max(heap_t *heap)
 {   
     // Verifica se a heap está vazia
     if (heap->tamanho == 0)
@@ -101,7 +101,7 @@ int remover(heap_t *heap)
  * @note A função imprime os valores da heap em ordem de nível, começando pela raiz.
  *       A função utiliza um loop para percorrer os elementos da heap e imprimi-los.
  */
-void imprimir(heap_t heap)
+void imprimir_max(heap_t heap)
 {
     printf("Heap: ");
     for (int i = 0; i < heap.tamanho; i++)
