@@ -97,7 +97,30 @@ Porém, existe um **algoritmo de ordenação chamado Heap Sort**, que **usa um h
 *   **Árvore de Busca Binária:** Estrutura + Ordem para busca eficiente.
 *   **Heap Binário:** Estrutura completa + Ordem para acesso rápido ao extremo (máximo/mínimo).
 
----
+
+## 📌 Heap Sort
+
+O **Heap Sort** é um algoritmo de ordenação baseado na estrutura de heap, especialmente no **Max-Heap**.
+
+### 🔄 Funcionamento
+
+1. **Construção do Max-Heap**: reorganiza o vetor original para que ele satisfaça a propriedade de Max-Heap.
+2. **Ordenação**:
+   - Troca o primeiro elemento (maior) com o último.
+   - Reduz o tamanho considerado do heap.
+   - Reorganiza o heap para manter a propriedade max-heap.
+
+Esse processo se repete até que o vetor esteja ordenado.
+
+### 🧠 Exemplo:
+
+Dado o vetor `[4, 10, 3, 5, 1]`:
+
+1. Constrói Max-Heap → `[10, 5, 3, 4, 1]`
+2. Troca 10 com 1 → `[1, 5, 3, 4, 10]`
+3. Reorganiza o heap → `[5, 4, 3, 1, 10]`
+4. Repete até o vetor estar totalmente ordenado
+
 
 ## 📈 Diagrama de Sequência (Exemplo da `main`)
 
