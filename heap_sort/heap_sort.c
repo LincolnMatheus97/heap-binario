@@ -56,6 +56,11 @@ void construir_heap(heap_t *heap) {
  *       e reorganiza o heap para os elementos restantes, repetindo até ordenar todo o vetor.
  */
 void heap_soft(heap_t *heap) {
+
+    if (heap->tamanho <= 1) {
+        return; // Se a heap já estiver vazia ou com um único elemento, não há nada a fazer
+    }
+
     construir_heap(heap);
     for (int i = heap->tamanho - 1; i >= 1; i--) {
         trocar(&heap->dados[0], &heap->dados[i]);
