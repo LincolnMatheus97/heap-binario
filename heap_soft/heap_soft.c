@@ -1,4 +1,4 @@
-#include "heap_soft.h"
+#include "heap_sort.h"
 
 /**
  * @brief Troca os valores de dois inteiros.
@@ -55,7 +55,12 @@ void construir_heap(heap_t *heap) {
  * @note Primeiro transforma o vetor em um heap máximo, depois troca a raiz com o último elemento
  *       e reorganiza o heap para os elementos restantes, repetindo até ordenar todo o vetor.
  */
-void heap_soft(heap_t *heap) {
+void heap_sort(heap_t *heap) {
+
+    if (heap->tamanho <= 1) {
+        return; // Se a heap tem 0 ou 1 elemento, já está ordenada
+    }
+
     construir_heap(heap);
     for (int i = heap->tamanho - 1; i >= 1; i--) {
         trocar(&heap->dados[0], &heap->dados[i]);
@@ -83,7 +88,7 @@ int main() {
     imprimir(&heap); 
 
     printf("Depois: ");
-    heap_soft(&heap);
+    heap_sort(&heap);
     imprimir(&heap);
 
     return 0;
