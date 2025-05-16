@@ -97,6 +97,74 @@ Porém, existe um **algoritmo de ordenação chamado Heap Sort**, que **usa um h
 *   **Árvore de Busca Binária:** Estrutura + Ordem para busca eficiente.
 *   **Heap Binário:** Estrutura completa + Ordem para acesso rápido ao extremo (máximo/mínimo).
 
+---
+
+## 🛠️ Exemplos de Usos para Heap Binário
+
+A estrutura de dados **heap binário** é amplamente utilizada em várias áreas da computação por causa de sua eficiência na manipulação de **valores com prioridades**. Abaixo estão exemplos práticos e reais de **usos do heap binário**:
+
+---
+
+### ✅ 1. **Filas de prioridade (Priority Queue)**
+- **Descrição:** permite inserir elementos com prioridade e extrair o de maior (ou menor) prioridade rapidamente.
+- **Aplicações práticas:**
+  - Sistemas operacionais (agendamento de processos).
+  - Gerenciamento de tarefas em jogos.
+  - Simuladores de eventos (por exemplo, em redes ou linhas de produção).
+
+---
+
+### ✅ 2. **Heap Sort**
+- **Descrição:** algoritmo de ordenação baseado em heap binário (geralmente Max-Heap).
+- **Aplicações práticas:**
+  - Ordenação de grandes volumes de dados quando não se pode usar muita memória extra (é in-place).
+  - Situações que exigem desempenho consistente com complexidade `O(n log n)`.
+
+---
+
+### ✅ 3. **Algoritmo de Dijkstra**
+- **Descrição:** encontra o caminho mais curto de um ponto a outro em grafos ponderados.
+- **Uso do heap:** Min-Heap é usado para obter o próximo vértice com a menor distância.
+- **Aplicações práticas:**
+  - GPS e mapas (Google Maps, Waze).
+  - Roteamento de pacotes em redes.
+
+---
+
+### ✅ 4. **Algoritmo de Kruskal**
+- **Descrição:** usado para encontrar a **árvore geradora mínima** de um grafo.
+- **Uso do heap:** fila de prioridade para ordenar arestas por peso.
+- **Aplicações práticas:**
+  - Otimização de redes de energia, estradas, redes de computadores.
+
+---
+
+### ✅ 5. **Simulação de eventos futuros**
+- **Descrição:** agenda eventos em ordem de tempo crescente.
+- **Uso do heap:** Min-Heap com base na hora programada do evento.
+- **Aplicações práticas:**
+  - Simulações em tempo real (linhas de produção, elevadores).
+  - Jogos baseados em eventos (RTS, jogos de simulação).
+
+---
+
+### ✅ 6. **Mesclagem de k listas ordenadas (k-way merge)**
+- **Descrição:** eficiente para unir várias listas ordenadas.
+- **Uso do heap:** Min-Heap para sempre escolher o menor valor entre os primeiros de cada lista.
+- **Aplicações práticas:**
+  - Implementação do **Merge Sort Externo** (quando os dados não cabem na RAM).
+  - Sistemas de busca (como Google) que combinam resultados de vários servidores.
+
+---
+
+### ✅ 7. **Autocompletar e ranking em sistemas de busca**
+- **Descrição:** para mostrar os **top-N resultados** mais relevantes.
+- **Uso do heap:** Min-Heap para manter os `N` melhores resultados em tempo real.
+- **Aplicações práticas:**
+  - Motores de busca.
+  - E-commerces (mostrar produtos mais populares).
+
+---
 
 ## 📌 Heap Sort
 
